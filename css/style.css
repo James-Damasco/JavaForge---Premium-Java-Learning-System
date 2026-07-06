@@ -1,0 +1,32 @@
+body {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+.code-font {
+    font-family: 'Fira Code', monospace
+    ;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+}
+@keyframes pulse-grow {
+    0%, 100% {
+        box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 25px rgba(59, 130, 246, 0.8);
+    }
+}
+.pulse-active {
+    animation: pulse-grow 2s infinite;
+}
